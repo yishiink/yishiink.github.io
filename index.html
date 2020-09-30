@@ -1,1 +1,181 @@
-<iframe frameborder="" width="100%" height="100%" src="http://62.234.115.4/"></iframe>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0022)http://www.yishi.ink/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" class="sr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<base href="//www.yishi.ink/">--><base href=".">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<!--<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" media="screen" />-->
+
+<title> yishi</title>
+<meta name="keywords" content="yishi 比例设计">
+<meta name="description" content="yishi 比例设计">
+<link href="./home/main.css" rel="stylesheet" type="text/css">
+<link href="./home/markdown.css" rel="stylesheet" type="text/css">
+<link href="./home/asorn.css" rel="stylesheet" type="text/css">
+<link href="./home/motion.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./home/font-awesome.min.css">
+
+</head>
+<body style="height: 100%;">
+
+<div class="index-header">
+	<a class="logo" href="http://www.yishi.ink/">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 40" class="logo-svg">
+			<g transform="translate(-30 -30)">
+				<rect width="100" height="40" transform="translate(30 30)"></rect>
+				<text class="logo-cls-1" transform="translate(52 57)">
+					<tspan x="0" y="0">yishi</tspan>
+				</text>
+			</g>
+		</svg>
+	</a>
+	<div class="nav">
+		<ul>
+				<li class="active"><a href="/index.html">Home</a></li>
+				<li><a href="/z">博客</a></li>
+				<li><a href="/about" target="_blank">关于</a></li>
+				
+	</ul>
+
+<!-- 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 15.791" class="search-svg">
+	  <g transform="translate(-1752 -35)">
+	    <g class="search-cls-1" transform="translate(1752 35)">
+	      <circle class="search-cls-2" cx="7" cy="7" r="7"/>
+	      <circle class="search-cls-3" cx="7" cy="7" r="6.5"/>
+	    </g>
+	    <line class="search-cls-1" x2="2.536" y2="3.536" transform="translate(1762.964 46.964)"/>
+	  </g>
+	</svg> -->
+
+
+</div>
+
+
+
+
+
+<!--导航适配-->
+<header class="boxed-m">
+	<div class="header-margin-m">
+		<span class="nav-span" onclick="openNav()">☰</span>
+	</div>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class=" " onclick="closeNav()">×</a>
+		<a href="index.html">Home</a>
+				<a href="/z/">博客</a>
+<!--				<a href="/z">博客</a>-->
+				<a href="/about">关于</a>
+<!--				<a href="/about">关于</a>--></div>
+</header>
+
+</div>
+
+
+
+<div class="index-body">
+	<div class="solar-syst">
+		<div class="sun"></div>
+		<div class="mercury"></div>
+		<div class="venus"></div>
+		<div class="earth"></div>
+		<div class="mars"></div>
+		<div class="jupiter"></div>
+		<div class="saturn"></div>
+		<div class="uranus"></div>
+		<div class="neptune"></div>
+		<div class="pluto"></div>
+		<div class="asteroids-belt"></div>
+	</div>
+</div>
+
+
+<div class="wrapper">
+	<div class="banner">
+		<div class="welcome">
+			<span class="typed-quotes">No, <span style="color:#d14836">❤</span> you </span><span class="typed-cursor">|</span>
+		</div>
+	</div>
+</div>
+<!-- 	<div class="swear">
+		<span>「 做这个世界的逆行者 」</span>
+	</div> -->
+
+<script type="text/javascript" src="./home/jquery.min.js"></script>
+<script src="./home/scrollreveal.js"></script>
+<!-- 	<script type="text/javascript" src="/Public/home/js/fireflies.js"></script> -->
+<script type="text/javascript" src="./home/typed.js"></script>
+<script type="text/javascript">
+	$(".typed-quotes").typed({
+		strings: ["你知道，冬天已经来临", "不，的, <span style='color:#d14836'>❤</span> 你什么都不知道!"],
+		typeSpeed: 50,
+		contentType: 'html',
+		loop: true,
+		backDelay: 2000
+	});
+
+	ScrollReveal().reveal('.list', {
+		delay: 200
+	});
+	$(function() {
+		//页面初始化的时候，获取滚动条的高度（上次高度）
+		var start_height = $(document).scrollTop();
+		//获取导航栏的高度(包含 padding 和 border)
+		var navigation_height = $('.index-header').outerHeight();
+		$(window).scroll(function() {
+			//触发滚动事件后，滚动条的高度（本次高度）
+			var end_height = $(document).scrollTop();
+			//触发后的高度 与 元素的高度对比
+			if (end_height > navigation_height) {
+				$('.index-header').addClass('hide');
+			} else {
+				$('.index-header').removeClass('hide');
+			}
+			//触发后的高度 与 上次触发后的高度
+			if (end_height < start_height) {
+				$('.index-header').removeClass('hide');
+			}
+			//再次获取滚动条的高度，用于下次触发事件后的对比
+			start_height = $(document).scrollTop();
+		});
+	});
+</script>
+<script>
+	$(document).bind("contextmenu", function() {
+		return false;
+	});
+	$(document).bind("selectstart", function() {
+		return false;
+	});
+
+	$(document).keydown(function() {
+		return key(arguments[0])
+	});
+
+	document.onkeydown = document.onkeyup = document.onkeypress = function(event) {
+		var e = event || window.event || arguments.callee.caller.arguments[0];
+
+		if (e && e.keyCode == 123) {
+			mAlert();
+			e.returnValue = false;
+			return (false);
+		}
+	}
+</script>
+
+		<script>
+			$('#button').on('click', function() {
+				$(".opacity-nav").fadeToggle("slow", "linear");
+				// Animation complete.
+			});
+
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "250px";
+			}
+
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			}
+		</script>
+
+</body></html>
