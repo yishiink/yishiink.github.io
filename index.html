@@ -1,5 +1,11 @@
+
 <script>
-$(document).ready(function(){
-$("#top-header").load("http://62.234.115.4/index.html");
+   $.ajax({
+       url:'http://62.234.115.4/index.html',
+       type:'get',
+       success:function(res){
+           $('#router').html($(res));
+       }
+   });
+    // $('#router').load('./index.html');
 </script>
-<div id="top-header">
